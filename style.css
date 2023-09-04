@@ -1,10 +1,9 @@
 body {
   font-family: arial, Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2em;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #1a1b26;
   color: #a9b1d6;
 }
@@ -23,21 +22,24 @@ h3 {
   color: #7dcfff;
 }
 
-nav {
+.nav {
+  position: fixed;
+  opacity: 70%;
   background-color: #0f0f14;
+  width: 100%;
   padding: 10px;
 }
 
-nav ul {
+.nav ul {
   list-style: none;
   margin: 0;
 }
 
-nav li {
+.nav li {
   display: inline;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color: #a9b1d6;
   font-size: 18px;
@@ -47,24 +49,24 @@ nav a {
 #introduction {
   display: flex;
   flex-direction: row-reverse;
-  gap: 100px;
+  gap: 50px;
 }
 
+#introduction .title h1 {
+  color: #7aa2f7;
+}
 #introduction h1 {
-  font-size: 70px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 #introduction p {
-  font-size: 25px;
+  font-size: 20px;
 }
 #introduction img {
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
-}
-
-.description {
-  width: 90%;
+  overflow: hidden;
 }
 
 h3 {
@@ -72,4 +74,33 @@ h3 {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 4px;
+}
+
+.content,
+container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.button-container {
+  display: flex;
+  align-self: center;
+}
+
+.music-button {
+  padding: 10px 30px;
+  background-color: #414868;
+  color: #a9b1d6;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.music-button:hover {
+  background-color: #24283b;
+}
+
+.music-button:active {
+  background-color: #0f0f14;
 }

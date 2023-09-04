@@ -7,42 +7,45 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <div class="nav">
       <ul class="navigation">
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#music">Music</a></li>
         <li><a href="#powerlifting">Powerlifting</a></li>
         <li><a href="#keyboards">Keyboards</a></li>
       </ul>
-    </nav>
-    <article>
-      <div class="container">
-        <div id="introduction">
+    </div>
+    <div class="container">
+      <div id="introduction">
+        <div class="image-container">
           <img src="images/pfp.jpg" alt="A photo of me" />
-          <div class="title">
-            <h1>Adrian Balbalosa</h1>
-            <p class="subtitle">
-              Computer Science Student / Musician / Powerlifter
-            </p>
-          </div>
         </div>
-        <div class="description">
-          <h3>Bio</h3>
-          <p>
-            Hi, I'm Adrian! A 2nd Year Computer Science Student at UNSW, also
-            sometimes known as SeverelyDamaged anywhere else. Outside of being
-            on the Cope Sci grind, I like to play guitar, attempt to make music,
-            powerlift, and build keyboards whenever I have money.
+        <div class="title">
+          <h1>Adrian Balbalosa</h1>
+          <p class="subtitle">
+            Computer Science Student / Musician / Powerlifter
           </p>
         </div>
-        <div id="about-me">
-          <h3>About Me</h3>
-          <p>Age: 22 (Yes I am old)</p>
-          <p>Pronouns: he/him</p>
-          <p>Ethnicity: Filipino</p>
-          <p>Degree: Bachelor of Science (Computer Science)</p>
-        </div>
       </div>
-    </article>
+      <div class="content">
+        <h3>Bio</h3>
+        <p class="bio-text">
+          Hi, I'm Adrian! A 2nd Year Computer Science Student at UNSW, also
+          sometimes known as SeverelyDamaged anywhere else. Outside of being on
+          the Cope Sci grind, I like to play guitar, attempt to make music,
+          powerlift, and build keyboards whenever I have money.
+        </p>
+      </div>
+      <div class="button-container">
+        <button type="button" class="music-button">My Music</button>
+      </div>
+      <div class="content">
+        <h3>About Me</h3>
+        <p>Age: 22 (Yes I am old)</p>
+        <p>Pronouns: he/him</p>
+        <p>Ethnicity: Filipino</p>
+        <p>Degree: Bachelor of Science (Computer Science)</p>
+      </div>
+    </div>
   </body>
 </html>
